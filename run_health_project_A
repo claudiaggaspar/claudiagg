@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 # Project A — Rule-based target + Decision Tree
-# Portable for GitHub/Codespaces:
-#   - Reads CSV from data/raw/health_lifestyle.csv OR --csv/HEALTH_CSV
-#   - Creates folders reports/ and reports/figures/
-#   - Saves figures and a summary JSON
 
 import os
 import json
@@ -262,3 +258,4 @@ with open(REPORTS / "eda_tree_summary.json", "w", encoding="utf-8") as f:
 print("Done.")
 print(f"Figures: {FIG_DIR}")
 print(f"Summary: {REPORTS / 'eda_tree_summary.json'}")
+
